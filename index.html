@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AsoGuanga — Hilando en Dualidad</title>
+  <meta name="description" content="Asociación Guanga, Hilando en Dualidad. Organización de mujeres del territorio indígena de Ipiales que lidera procesos de empoderamiento, memoria y saberes ancestrales.">
+
+  <!-- Seguridad: restringe orígenes de contenido para mitigar XSS/inyección de recursos externos -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+
+  <!-- ======================= SKIP LINK (ACCESIBILIDAD) ======================= -->
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- ======================= ENCABEZADO / NAVEGACIÓN ======================= -->
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a href="#inicio" class="brand">
+        <!--<span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40" role="img" aria-label="Telar de la Asociación Guanga">
+            <g stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round">
+              <path d="M4 10 L44 38"></path>
+              <path d="M4 20 L44 48"></path>
+              <path d="M4 38 L44 10"></path>
+              <path d="M4 48 L44 20"></path>
+            </g>
+          </svg>
+        </span>-->
+        
+
+        <img src="asoguanga logo.png" alt="Logo de AsoGuanga" class="brand-mark" width="60" height="50">
+        <span class="brand-text">
+          <span class="brand-line1">Asociacion Guanga</span>
+          <span class="brand-line2">Hilando en dualidad</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" type="button">
+        <span class="nav-toggle-box">
+          <span class="nav-toggle-bar"></span>
+        </span>
+        <span class="sr-only">Abrir menú de navegación</span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotras" class="nav-link">Acerca de nosotras</a></li>
+          <li><a href="#mision" class="nav-link">Misión</a></li>
+          <li><a href="#hilos" class="nav-link">Líneas de acción</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ======================= HERO / INICIO ======================= -->
+    <section class="hero" aria-label="Inicio">
+      <div class="hero-weave" aria-hidden="true">
+        <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="weaveHero" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+              <path d="M0 20 L80 60" stroke="#C7B8DC" stroke-width="2" opacity="0.55"/>
+              <path d="M0 60 L80 20" stroke="#EDE3CE" stroke-width="2" opacity="0.6"/>
+              <path d="M0 0 L80 40" stroke="#9C87B8" stroke-width="1.4" opacity="0.35"/>
+              <path d="M0 40 L80 0" stroke="#EDE3CE" stroke-width="1.4" opacity="0.35"/>
+            </pattern>
+          </defs>
+          <rect width="800" height="600" fill="url(#weaveHero)"></rect>
+        </svg>
+      </div>
+
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Territorio indígena de Ipiales · Desde 2021</p>
+        <h1 class="hero-title">
+          Dos hilos, <em>un mismo tejido.</em>
+        </h1>
+        <p class="hero-lede">
+          Somos una juntanza de mujeres que hila memoria, género, territorio y cultura
+          en el telar de la guanga: donde cada hebra distinta se entrecruza para
+          sostener el buen vivir de nuestra comunidad.
+        </p>
+        <div class="hero-actions">
+          <a href="#nosotras" class="btn btn-primary">Conoce nuestra historia</a>
+          <a href="#hilos" class="btn btn-ghost">Ver líneas de acción</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div class="hero-stat">
+            <dt>Constitución legal</dt>
+            <dd>02 · sept · 2021</dd>
+          </div>
+          <div class="hero-stat">
+            <dt>Registro ante</dt>
+            <dd>Cámara de Comercio y Alcaldía de Ipiales</dd>
+          </div>
+          <div class="hero-stat">
+            <dt>Líneas de acción</dt>
+            <dd>7 hilos de trabajo</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ======================= DIVISOR TEJIDO ======================= -->
+    <div class="weave-divider" aria-hidden="true"></div>
+
+    <!-- ======================= ACERCA DE NOSOTRAS ======================= -->
+    <section class="section about" id="nosotras" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+
+        <div class="about-copy">
+          <p class="eyebrow">Acerca de nosotras</p>
+          <h2 id="about-title">Una historia tejida desde el colectivo</h2>
+
+          <p>
+            La Asociación Guanga, Hilando en Dualidad, nació en el año 2021 como un colectivo
+            de mujeres. El <strong>02 de septiembre de 2021</strong> fue registrada formalmente
+            ante la Cámara de Comercio de Ipiales y la Alcaldía Municipal de Ipiales, dando
+            un paso firme del encuentro comunitario hacia una organización con incidencia
+            territorial.
+          </p>
+
+          <p>
+            Somos una organización que lidera procesos de empoderamiento de las mujeres dentro
+            del territorio indígena de Ipiales. Reconocemos su papel histórico, defendemos la
+            transmisión de saberes entre generaciones y sostenemos un profundo respeto ancestral
+            hacia las mayoras, guardianas de la memoria y la cultura de nuestro pueblo.
+          </p>
+
+        </div>
+
+        <aside class="about-loom" aria-hidden="true">
+          <svg viewBox="0 0 320 420" width="100%" height="100%">
+            <rect x="10" y="10" width="300" height="400" rx="18" fill="#FFFFFF" stroke="#E3D6F2" stroke-width="2"/>
+            <g stroke="#9C87B8" stroke-width="2" opacity="0.7">
+              <line x1="40" y1="40" x2="40" y2="380"></line>
+              <line x1="80" y1="40" x2="80" y2="380"></line>
+              <line x1="120" y1="40" x2="120" y2="380"></line>
+              <line x1="160" y1="40" x2="160" y2="380"></line>
+              <line x1="200" y1="40" x2="200" y2="380"></line>
+              <line x1="240" y1="40" x2="240" y2="380"></line>
+              <line x1="280" y1="40" x2="280" y2="380"></line>
+            </g>
+            <g stroke="#EDE3CE" stroke-width="10" fill="none" stroke-linecap="round">
+              <path d="M30 70 Q160 100 290 70"></path>
+              <path d="M30 130 Q160 160 290 130"></path>
+              <path d="M30 190 Q160 220 290 190"></path>
+              <path d="M30 250 Q160 280 290 250"></path>
+              <path d="M30 310 Q160 340 290 310"></path>
+            </g>
+          </svg>
+          <p class="loom-caption">Chumbe simbólico — hilos que se cruzan en dualidad</p>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ======================= MISIÓN INSTITUCIONAL ======================= -->
+    <section class="section mission" id="mision" aria-labelledby="mission-title">
+      <div class="wrap mission-wrap">
+        <div class="mission-card">
+          <span class="mission-tag">Misión institucional</span>
+          <h2 id="mission-title">Un tejido de propósito compartido</h2>
+          <p>
+            AsoGuanga es una juntanza de mujeres que trabaja y lidera temas de género, medio
+            ambiente, cultura, política y acción social con y para niños, niñas, jóvenes y
+            mujeres del territorio. Lo hacemos a través de la investigación, la formación,
+            la creación artística y cultural, la producción audiovisual y la formulación y
+            ejecución de proyectos que construyen el buen vivir y el vivir bien de la
+            comunidad del Municipio de Ipiales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= LÍNEAS DE ACCIÓN ======================= -->
+    <section class="section threads" id="hilos" aria-labelledby="threads-title">
+      <div class="wrap">
+        <p class="eyebrow">Información relevante</p>
+        <h2 id="threads-title">Siete hilos, un mismo tejido de acción</h2>
+        <p class="section-lede">
+          Cada línea de acción es un hilo distinto que, entrelazado con los demás, sostiene
+          el trabajo integral de AsoGuanga en el territorio.
+        </p>
+
+        <ul class="thread-grid">
+          <li class="thread-card">
+            <span class="thread-index">Hilo 01</span>
+            <h3>Mujer y género</h3>
+            <p>Procesos que visibilizan y fortalecen la voz y los derechos de las mujeres del territorio.</p>
+          </li>
+          <li class="thread-card">
+            <span class="thread-index">Hilo 02</span>
+            <h3>Empoderamiento y liderazgo</h3>
+            <p>Formación de liderazgos comunitarios que impulsan la participación femenina.</p>
+          </li>
+          <li class="thread-card">
+            <span class="thread-index">Hilo 03</span>
+            <h3>Emprendimiento</h3>
+            <p>Impulso a iniciativas productivas y económicas lideradas por mujeres del territorio.</p>
+          </li>
+          <li class="thread-card">
+            <span class="thread-index">Hilo 04</span>
+            <h3>Revitalización de saberes ancestrales</h3>
+            <p>Recuperación y transmisión intergeneracional del conocimiento propio.</p>
+          </li>
+          <li class="thread-card">
+            <span class="thread-index">Hilo 05</span>
+            <h3>Cuidado y protección de la Madre Tierra</h3>
+            <p>Acciones ambientales enraizadas en la cosmovisión indígena del territorio.</p>
+          </li>
+          <li class="thread-card">
+            <span class="thread-index">Hilo 06</span>
+            <h3>Investigación y formación política</h3>
+            <p>Construcción de conocimiento propio para la incidencia en espacios de decisión.</p>
+          </li>
+          <li class="thread-card">
+            <span class="thread-index">Hilo 07</span>
+            <h3>Participación educativa y social</h3>
+            <p>Presencia activa en escenarios educativos y comunitarios del municipio de Ipiales.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= GALERÍA MULTIMEDIA ======================= -->
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <p class="eyebrow">Memoria visual</p>
+        <h2 id="gallery-title">Galería fotográfica y audiovisual</h2>
+        <p class="section-lede">
+          Este espacio reúne los registros de nuestros encuentros, talleres, mingas y
+          producciones audiovisuales. Se ampliará progresivamente con nuevo contenido
+          fotográfico y multimedia de la asociación.
+        </p>
+
+        <!-- 
+          NOTA PARA CONTENIDO FUTURO:
+          Cada .gallery-item admite una imagen real. Basta con reemplazar el elemento
+          .gallery-placeholder por una etiqueta <img src="ruta/imagen.jpg" alt="descripción">
+          sin modificar la estructura de la cuadrícula ni el CSS.
+        -->
+        <div class="gallery-grid" id="galleryGrid">
+          <figure class="gallery-item gallery-item--wide">
+            <div class="gallery-placeholder" data-label="Encuentro comunitario"></div>
+            <figcaption>Encuentros y mingas de la comunidad</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-placeholder" data-label="Tejido y chumbes"></div>
+            <figcaption>Saberes textiles ancestrales</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-placeholder" data-label="Mayoras y memoria"></div>
+            <figcaption>Palabra y memoria de las mayoras</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-placeholder" data-label="Producción audiovisual"></div>
+            <figcaption>Producción audiovisual comunitaria</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-item--wide">
+            <div class="gallery-placeholder" data-label="Talleres de formación"></div>
+            <figcaption>Talleres de formación y liderazgo</figcaption>
+          </figure>
+        </div>
+
+        <p class="gallery-note">Próximamente: video documental y registro fotográfico ampliado.</p>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACTO ======================= -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+
+        <div class="contact-copy">
+          <p class="eyebrow">Contacto</p>
+          <h2 id="contact-title">Tejamos juntas el próximo hilo</h2>
+          <p>
+            Si deseas conocer más sobre nuestro trabajo, articular procesos comunitarios o
+            apoyar nuestras líneas de acción, escríbenos. Con gusto responderemos.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Territorio</span>
+              <span>Territorio indígena de Ipiales, Nariño, Colombia</span>
+            </li>
+            <li>
+              <span class="contact-label">Correo</span>
+              <span>contacto@asoguanga.org</span>
+            </li>
+            <li>
+              <span class="contact-label">Registro</span>
+              <span>Cámara de Comercio de Ipiales · 02 de septiembre de 2021</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="fullName">Nombre completo</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" maxlength="80" required>
+            <p class="field-error" id="fullNameError" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
+            <p class="field-error" id="emailError" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" maxlength="120" required>
+            <p class="field-error" id="subjectError" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea>
+            <p class="field-error" id="messageError" role="alert" aria-live="polite"></p>
+          </div>
+
+          <!-- Campo trampa anti-bots (honeypot): oculto para personas, visible para bots -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">No completar este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">Enviar mensaje</button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= PIE DE PÁGINA ======================= -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-line1">AsoGuanga</span>
+        <span class="brand-line2">Hilando en dualidad</span>
+      </div>
+      <p class="footer-note">
+        Asociación Guanga, Hilando en Dualidad · Territorio indígena de Ipiales · Registrada
+        el 02 de septiembre de 2021.
+      </p>
+      <p class="footer-copy">© <span id="currentYear"></span> AsoGuanga. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
